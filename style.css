@@ -1,0 +1,129 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    height: 100%;
+    width: 100%;
+    padding: 0%;
+    background-color: black;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+#page1 {
+    height: 100%;
+    width: 100%;
+    /* background-color:black; */
+    display: flex;
+    justify-content: center;
+    background-image: url(https://sxcontent9668.azureedge.us/cms-assets/assets/Star6_84_050425_DSC_4447_desktop_6c42fc10f6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    position: relative;
+    width: fit-content;
+
+}
+
+#nav1 {
+    height: 14%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: transparent;
+    align-items: center;
+    text-align: center;
+}
+
+#id {
+    text-decoration: none;
+    color: white;
+}
+
+/* 
+#nav1 {
+
+} */
+#nav1 a:hover {
+    text-decoration: underline;
+}
+
+/* part of hover st nav bar */
+#nav1 a::after {
+    content: " ";
+    position: absolute;
+    height: 1px;
+    width: 0%;  
+    left: 50%;
+    bottom: 0%;
+    transition: all ease 0.5s;
+    transform: translate(-50% );
+    background-color: black;
+
+}
+
+#nav1 a:hover::after {
+    width: 100%;
+
+}
+
+#text {
+    position: absolute;
+    width: 30%;
+    height: 30%;
+    background-color: transparent;
+    color: white;
+    /* display: flex;
+    justify-content: center;
+    flex-direction: column;  
+    # colmns ko ek line m laata hai
+    align-items:start ; */
+    text-align: start;
+    top: 60%;
+    left: 4.5%;
+    
+}
+
+
+#nav1 h1 {
+    font-size: 40px;
+
+}
+
+#but {
+    margin: 0px;
+    padding: 15px 25px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+
+}
+
+#but:hover {
+    color: black;
+    background-color: white;
+    /* transition: all ease 0.5s; */
+
+}
+
+
