@@ -2,7 +2,7 @@
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 }
 
@@ -27,7 +27,7 @@ body {
     /* background-color:black; */
     display: flex;
     justify-content: center;
-    background-image: url(https://sxcontent9668.azureedge.us/cms-assets/assets/Star6_84_050425_DSC_4447_desktop_6c42fc10f6.jpg);
+    background-image: url(https://sxcontent9668.azureedge.us/cms-assets/assets/Homepage_Starlink_SLC_40_Desktop_5b1e6b5dd0.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -35,18 +35,52 @@ body {
 
 }
 
+#space{
+    margin: 0px;
+    padding: 20px 20px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 35px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+
 a {
     text-decoration: none;
     color: white;
-    font-size: 12px;
+    font-size: 14px;
     position: relative;
     width: fit-content;
 
 }
 
 #nav1 {
-    height: 14%;
+    height: 40%;
     width: 100%;
+}
+    
+
+#id { 
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: space-between ;
+    
+}
+#star{
+    margin-right: 100px;
+} 
+#fal{
+    margin-left:10px ;
+}
+
+#div1{
+    margin: 1%;
+    height: 25%;
+    width: 80%;
+
     display: flex;
     justify-content: space-evenly;
     background-color: transparent;
@@ -54,36 +88,32 @@ a {
     text-align: center;
 }
 
-#id {
-    text-decoration: none;
-    color: white;
-}
 
-/* 
-#nav1 {
-
-} */
-#nav1 a:hover {
-    text-decoration: underline;
-}
-
-/* part of hover st nav bar */
-#nav1 a::after {
+#div1 a::after {
+    
     content: " ";
-    position: absolute;
+    position: absolute; 
     height: 1px;
-    width: 0%;  
-    left: 50%;
+    width: 0%; 
+    left: 0%;
     bottom: 0%;
     transition: all ease 0.5s;
-    transform: translate(-50% );
-    background-color: black;
+    transform: translate(0%);
+    background-color: white;
+    
+
+}
+#div1 a:hover::after {
+    width: 100%;    
 
 }
 
-#nav1 a:hover::after {
-    width: 100%;
+/* #div1 a:active::after {
+    width: 100%;    
 
+} */
+#id i{
+    text-decoration: none;
 }
 
 #text {
@@ -104,7 +134,7 @@ a {
 }
 
 
-#nav1 h1 {
+#div1 h1 {
     font-size: 40px;
 
 }
@@ -126,4 +156,98 @@ a {
 
 }
 
+#page2{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-image: url(https://sxcontent9668.azureedge.us/cms-assets/assets/Star6_84_050425_DSC_4447_desktop_6c42fc10f6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
 
+#text2 {
+    position: absolute;
+    width: 30%;
+    height: 30%;
+    background-color: transparent;
+    color: white;
+    text-align: start;
+    top: 60%;
+    left: 4.5%;
+    
+}
+
+#page3{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-image: url(https://sxcontent9668.azureedge.us/cms-assets/assets/20250501_Starlink_6_75_DSC_00459_desktop_22e5106564.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+#text3 {
+    position: absolute;
+    width: 30%;
+    height: 30%;
+    background-color: transparent;
+    color: white;
+    text-align: start;
+    top: 60%;
+    left: 4.5%;
+    
+}
+
+#page4{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-image: url(https://sxcontent9668.azureedge.us/cms-assets/assets/Eva_Suit_Desktop_alternate_1cf9bae18e.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+#text4 {
+    position: absolute;
+    width: 15%;
+    height: 35%;
+    background-color: transparent;
+    color: white;
+    text-align: start;
+    top: 60%;
+    left: 4.5%;
+    
+}
+
+#page5{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-image: url(https://sxcontent9668.azureedge.us/cms-assets/assets/make_life_multiplanetary_desktop_3fa7cff73c.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+#text5{
+    position: absolute;
+    width: 15%;
+    height: 35%;
+    background-color: transparent;
+    color: white;
+    text-align: start;
+    top: 60%;
+    left: 4.5%;
+    
+}
