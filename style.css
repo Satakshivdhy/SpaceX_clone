@@ -35,7 +35,7 @@ body {
 
 }
 
-#space{
+#space {
     margin: 0px;
     padding: 20px 20px;
     background-color: transparent;
@@ -44,7 +44,7 @@ body {
     cursor: pointer;
     font-size: 35px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    
+
 }
 
 a {
@@ -60,9 +60,9 @@ a {
     height: 40%;
     width: 100%;
 }
-    
 
-#id { 
+
+#id {
     height: 100vh;
     width: 15vw;
     text-decoration: none;
@@ -71,77 +71,57 @@ a {
     justify-content: space-evenly;
     align-items: center;
     /* background-color: blueviolet; */
-   
-}
-#MenuSlide{
-    height: 200vh;
-    width: 30vw;
-   
-    background-color: black;
-    position: absolute;
-    right: -100%;
-    line-height: 30px;
-    color: #fff;
-   
-    display: flex;
-    flex-direction: column;
-    z-index: 1000;
-}
-#id:hover + #MenuSlide{
-    right: 100%;
-}
-#MenuSlide a{
-    text-decoration: none;
-    color: #fff;
-}
-#star{
-    margin-right: 100px;
-} 
-#fal{
-    margin-left:10px ;
+
 }
 
-#div1{
+#div1 {
     margin: 1%;
-    height: 25%;
+    height: 20%;
     width: 100%;
-
+    position: relative;
     display: flex;
-    justify-content: space-evenly;
-    background-color: transparent;
+    justify-content: space-between;
     align-items: center;
     text-align: center;
 }
-#nav-btn{
+
+#nav-btn {
+    left: 15%;
     height: 100%;
     width: 75%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    
+    background-color:transparent;
+    top: -100%;
+   
 
 }
-
+#div1 a{
+    top: -100%;
+    position: relative;
+}
 #div1 a::after {
-    
+
     content: " ";
-    position: absolute; 
+    position: absolute;
     height: 1px;
-    width: 0%; 
+    width: 0%;
     left: 0%;
     bottom: 0%;
     transition: all ease 0.5s;
     transform: translate(0%);
     background-color: white;
-    
+
 
 }
+
 #div1 a:hover::after {
-    width: 100%;    
+    width: 100%;
 
 }
 
-#id i{
+#id i {
     text-decoration: none;
 }
 
@@ -151,14 +131,24 @@ a {
     height: 30%;
     background-color: transparent;
     color: white;
-    /* display: flex;
-    justify-content: center;
-    flex-direction: column;  
-    # colmns ko ek line m laata hai
-    align-items:start ; */
     text-align: start;
     top: 60%;
     left: 4.5%;
+    animation-name: one;
+    animation-duration: 5s;
+    animation-direction: alternate;
+    animation-timing-function: ease;
+
+}
+
+@keyframes one {
+    from{
+        
+        top:100%;
+    }
+    to{
+        bottom: 0%;
+    }
     
 }
 
@@ -179,7 +169,7 @@ a {
 
 }
 
-#page2{
+#page2 {
     height: 100%;
     width: 100%;
     display: flex;
@@ -200,10 +190,10 @@ a {
     text-align: start;
     top: 60%;
     left: 4.5%;
-    
+
 }
 
-#page3{
+#page3 {
     height: 100%;
     width: 100%;
     display: flex;
@@ -224,10 +214,10 @@ a {
     text-align: start;
     top: 60%;
     left: 4.5%;
-    
+
 }
 
-#page4{
+#page4 {
     height: 100%;
     width: 100%;
     display: flex;
@@ -248,10 +238,10 @@ a {
     text-align: start;
     top: 60%;
     left: 4.5%;
-    
+
 }
 
-#page5{
+#page5 {
     height: 100%;
     width: 100%;
     display: flex;
@@ -263,7 +253,7 @@ a {
     position: relative;
 }
 
-#text5{
+#text5 {
     position: absolute;
     width: 15%;
     height: 35%;
@@ -272,5 +262,129 @@ a {
     text-align: start;
     top: 60%;
     left: 4.5%;
-    
+
 }
+
+/* #nav-btn {
+
+    animation-name: ok;
+    animation-timing-function: ease;
+    animation-duration: 5s;
+    animation-direction: alternate;
+    
+ }
+
+@keyframes ok {
+    from {
+        
+        top: -100%;
+    }
+
+    to {
+        
+        top: 0%;
+    }
+
+}  */
+
+#a{
+    animation-name: ok;
+    animation-timing-function: ease;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+#b{
+    animation-name: ok;
+    animation-timing-function: ease;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+}
+#c{
+    animation-name: ok;
+    animation-timing-function: ease;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+
+}
+#d{
+    animation-name: ok;
+    animation-timing-function: ease;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-delay: 4s;
+
+}
+#e{
+    animation-name: ok;
+    animation-timing-function: ease;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-delay: 5s;
+
+}
+#f{
+    animation-name: ok;
+    animation-timing-function: ease;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-delay: 6s;
+
+}
+#g{
+    animation-name: ok;
+    animation-timing-function: ease;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-delay: 7s;
+
+}
+#h{
+    animation-name: ok;
+    animation-timing-function: ease;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-delay: 8s;
+
+}
+
+#shop{
+    animation-name: ok;
+    animation-timing-function: ease;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-delay: 9s;
+
+}
+
+
+@keyframes ok {
+    from {
+        top: -100%;
+    }
+
+    to {
+        top:0%;
+    }
+
+}
+/* #nav-btn a{
+    animation-name:air ;
+    animation-timing-function: ease;
+    animation-duration: 5s;
+    animation-direction: alternate;
+    animation-play-state: running;
+    position: absolute;
+    
+} */
